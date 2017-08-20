@@ -11,4 +11,4 @@ for (var index = 1; index <= number; index += 1) {
 
     else {$("#output").text(index);}
 
-};
+});

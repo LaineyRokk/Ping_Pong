@@ -1,8 +1,8 @@
-Portfolio Landing Page for Epicodus 08.04.2017
+Portfolio Ping-Pong for Epicodus 08.04.2017
 
 by Lainey N. Rokkan
 
-This is the first independent project assigned to the new students of the Ruby/Rails program at Epicodus and it is to create a portfolio landing page
+This is the third independent project assigned to the new students of the Ruby/Rails program at Epicodus and it is to create a portfolio landing page
 
 Setup -Clone Repository provided by the GitHub link -Open HTTP server use brower of choice to view active webpage
 
@@ -16,7 +16,7 @@ Specifications
 
   Spec. Example:
     User input: 17
-    Return: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16, 17 
+    Return: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16, 17
 
 Contact Information laineyNrokk@gmail.com
 

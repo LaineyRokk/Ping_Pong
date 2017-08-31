@@ -1,14 +1,38 @@
-("form#selection").submit(function(event) {
-  var number = $("input#chosen").val();
+var pingPongGame = function(userInput) {
+  var inputArray = [];
+  if (userInput < 0) {
+    for (var index = -1; index >= userInput; index--) {
+      inputArray.push(index);       //Deal with user selection of negative number
+    }
+    inputArray.forEach(function(number) {
+      if (number % 15 === 0) {
+        numberArray[number-1] = 'pingpong';
+      }
+      else if (number % 3 === 0) {
+        numberArray[number-1] = 'ping';
+      }
+      else if (number % 5 === 0) {
+        numberArray[number-1] = 'pong';
+      }
+    });
+  }
+}
+  return numberArray;
 
-  event.preventDefault();
-for (var index = 1; index <= number; index += 1) {
-  if(index % 3 === 0) {$("output").text("Ping");}
+  var showOutputOL = function(outputArray) {
+    $('ul#result').empty();
+    outputArray.forEach(function(item) {
+      ('ul#result').append('<li>' + item + '</li>');
+    });
+    return;
+  }
 
-    else if (index % 5 === 0) {$("output").text("Pong");}
+  $(document).ready(function() {
+    $('form#gameInput').submit(fumction(event)) {
+      var userNumber = $('input#userInput').val();
 
-    else if (index % 15 === 0) {$("output").text("Ping-Pong");}
+      showOutputOL(pingPongGame(userInput));
 
-    else {$("#output").text(index);}
-
-});
+      vent.preventDefault();
+    });
+  });

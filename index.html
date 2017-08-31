@@ -8,19 +8,44 @@
     <title>Ping-Pong</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Ping-Pong</h1>
+      </div>
+    </div>
+
     <div class="container">
-      <h1>Input your chosen number</h1>
-      <form id="selection">
-        <label for="chosen">chosen number:</label>
-        <input id="chosen" type="text">
-
-        <button type="submit" class="btn">Submit!</button>
-      </form>
-
-    </div>
-    <div id="output">
-      
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
     </div>
 
-  </body>
-</html>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>About Ping Pong</h3>
+          <h4>Created by:</h4>
+          <p>Lainey Rokkan</p>
+          <h4>GitHub Username:</h4>
+          <a href="https://github.com/LaineyRokk/">LaineyRokk</a>
+          <h4>Epicodus Code Review: Arrays and Looping<h4>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-8">
+          <h3>Let's play!</h3>
+          <h4>Rules:</h4>
+          <p>Ping-Pong will count up to the number from 1 with the following exceptions:</p>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 1dddd5 become "pingpong"</li>
+          </ol>
+          <form id="gameInput">
+            <label for="userInput">Enter your number here:</label>
+            <input type="number" step="any" id="userInput">
+            <button type="submit">Ping-Pong!</button>
+          </form>
+          <ul id="result">
+        </div>
+      </div>

@@ -1,7 +1,7 @@
 var pingPongGame = function(userInput) {
   var inputArray = [];
-  if (userInput < 0) {
-    for (var index = -1; index >= userInput; index--) {
+  if (userInput > 0) {
+    for (var index = 1; index <= userInput; index++) {
       inputArray.push(index);       //Deal with user selection of negative number
     }
     inputArray.forEach(function(number) {
@@ -16,23 +16,24 @@ var pingPongGame = function(userInput) {
       }
     });
   }
-}
   return numberArray;
+}
+
 
   var showOutputOL = function(outputArray) {
     $('ul#result').empty();
     outputArray.forEach(function(item) {
-      ('ul#result').append('<li>' + item + '</li>');
+    $('ul#result').append('<li>' + item + '</li>');
     });
     return;
   }
 
   $(document).ready(function() {
-    $('form#gameInput').submit(fumction(event)) {
+    $('form#gameInput').submit(fumction(event) {
       var userNumber = $('input#userInput').val();
 
       showOutputOL(pingPongGame(userInput));
 
-      vent.preventDefault();
+      event.preventDefault();
     });
   });
